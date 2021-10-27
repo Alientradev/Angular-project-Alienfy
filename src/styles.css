@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    /* color palette  */
+    --color-1: #00BFFF;
+    --color-2: #03203E;
+    --color-3: #05081B;
+    --color-4: ;
+    --color-5: ;
+    --white: #FFFFFF;
+    --black: #000000;
+    --bgColor: #e0e0e0;
+    /* fonts  */
+    --font-size-1: 1rem;
+    --font-size-2: 1.2rem;
+    --font-size-3: 1.8rem;
+    --font-family-1: 'Raleway', sans-serif;;
+    --title-font: ;
+    /* Medidas */
+    --max-width: 1200px;
+    --header-height: 4rem;
+    --border-radius-1: .25rem;
+    --border-radius-2: .5rem;
+    --border-line-1: ;
+    /* Effects */
+    --box-Shadow-1: drop-shadow(-1px 1px 10px rgba(0, 0, 0, 0.7));
+    --box-Shadow-2: 2px 2px 22px 1px rgba(0,0,0,0.73);
+    --text-Shadow: 4px 3px 4px rgba(35, 15, 9, 0.86);
+    --glow: #FFF 0px 0px 10px;
+    --transitions: all 0.5s ease-out;
+    --animation-1: 200ms;
+}
+
+/* Reset CSS  */
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    /* height: 100%; */
+    background-color: var(--bgColor);
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-1);
+    color: var(--color-3);
+}
+
+/* Utilities  */
+
+.btn {
+    border: none;
+    user-select: none;
+    padding: .1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    background: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    transition: all .3s;
+    box-shadow: 6px 6px 16px #c5c5c5,
+                -6px -6px 16px #ffffff;
+}
+
+.btn:hover {
+    border: 1px solid var(--color-1);
+}
+
+.btn:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+}
+
+.textdeco {
+    border: none;
+    user-select: none;
+    padding: .1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    background: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    transition: all .3s;
+    box-shadow: 6px 6px 16px #c5c5c5,
+                -6px -6px 16px #ffffff;
+}
+
+.darklGlassBg {
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: .5rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.lightGlassBg {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: .5rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.neumorph {
+    border-radius: 9px;
+    background: #e0e0e0;
+    box-shadow: inset 9px 9px 18px #bcbcbc,
+            inset -9px -9px 18px #ffffff;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
